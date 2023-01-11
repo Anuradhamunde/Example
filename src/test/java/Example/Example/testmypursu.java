@@ -17,8 +17,7 @@ private WebDriver driver;
         WebDriverManager.chromedriver().setup();
         ChromeOptions options = new ChromeOptions();
         options.addArguments("--headless");
-		chromeOptions.addArguments("--no-sandbox", "--disable-dev-shm-usage");
-
+		
         driver =new ChromeDriver(options);
         System.out.println("chromedriver opened successfully");
          driver=new ChromeDriver();
