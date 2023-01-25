@@ -17,6 +17,7 @@ private WebDriver driver;
         WebDriverManager.chromedriver().setup();
         ChromeOptions options = new ChromeOptions();
         options.addArguments("--headless");
+        options.addArguments("--remote-debugging-port=9222");
         driver =new ChromeDriver(options);
         System.out.println("chromedriver opened successfully");
          driver=new ChromeDriver();
